@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Responsif</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      background-color: #444;
+      border-radius: 5px;
+    }
+
+    /* Dropdown Menu */
+    .menu-button {
+      background-color: #444;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      top: 50px;
+      right: 20px;
+    }
+
+    .dropdown-content a {
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #444;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Main Layout */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .main-content {
+      flex: 1;
+      min-width: 300px;
+      order: 1;
+      padding: 20px;
+      background-color: #f4f4f4;
+      margin-bottom: 20px;
+    }
+
+    .sidebar {
+      flex: 0 0 300px;
+      order: 2;
+      padding: 20px;
+      background-color: #e4e4e4;
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-content div {
+      flex: 1;
+      min-width: 200px;
+      padding: 10px;
+    }
+
+    .footer-links, .footer-ads, .footer-atribusi {
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      .sidebar {
+        order: 3;
+      }
+
+      .footer-content {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 10px;
+      }
+      nav a {
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Blog Responsif</h1>
+    <nav>
+      <a href="#home">Beranda</a>
+
+      <!-- Dropdown Menu untuk Halaman -->
+      <div class="dropdown">
+        <button class="menu-button">Menu</button>
+        <div class="dropdown-content">
+          <a href="#tentang">Tentang</a>
+          <a href="#kontak">Kontak</a>
+          <a href="#layanan">Layanan</a>
+          <a href="#privasi">Kebijakan Privasi</a>
+          <a href="#syarat">Syarat dan Ketentuan</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Container Utama -->
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content" id="home">
+      <h2>Postingan Blog</h2>
+      <p>Ini adalah area utama untuk konten blog Anda.</p>
+      <p>Masukkan kode berikut untuk iklan Anda:</p>
+      <script async src="https://admonishmentfastest.com/t8k086f4m?key=181f2e93bed879aa92b4bcc78c3f6126"></script>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Kategori</h3>
+      <ul>
+        <li><a href="#kategori1">Kategori 1</a></li>
+        <li><a href="#kategori2">Kategori 2</a></li>
+        <li><a href="#kategori3">Kategori 3</a></li>
+        <li><a href="#kategori4">Kategori 4</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <!-- Footer Pertama: Pos Populer dan Iklan -->
+      <div class="footer-ads">
+        <h3>Pos Populer</h3>
+        <ul>
+          <li><a href="#post1">Pos Populer 1</a></li>
+          <li><a href="#post2">Pos Populer 2</a></li>
+          <li><a href="#post3">Pos Populer 3</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Kedua: Daftar Halaman Blog -->
+      <div class="footer-links">
+        <h3>Daftar Halaman</h3>
+        <ul>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#privasi">Kebijakan Privasi</a></li>
+          <li><a href="#syarat">Syarat dan Ketentuan</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Ketiga: Atribusi -->
+      <div class="footer-atribusi">
+        <p>&copy; 2024 Blockchain Network. Semua hak dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
